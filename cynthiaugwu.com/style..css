@@ -206,24 +206,25 @@ body,html{
 
  
 .footer{
-    padding: 2.3vw 3.5vw;
+    padding: 2.2vw 3.5vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .footerleft{
     display: flex;
-    gap: 20PX;
+    gap: 33PX;
+    font-size: 17px;
 }
 
 .footerright{
    
     display: flex;
-    gap: 30PX;
+    gap: 40PX;
 }
 .footerright a{
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
     color: #fff;
     text-decoration: none;
