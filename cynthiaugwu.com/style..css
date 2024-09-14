@@ -9,6 +9,26 @@ body,html{
     width: 100%;
    
 }
+.minicircle{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 9999;
+    border-radius: 50%;
+    background-color: #fff;
+    transition:  all cubic-bezier(0.19, 1, 0.22, 1);
+}
+.bounding{
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.bounding #boundingelem{
+    transform: translateY(100%);
+    /* overflow: hidden; */
+    
+    
+}
 .main{
    background-color: #000;
    color: #fff;
@@ -45,11 +65,14 @@ body,html{
     font-weight: 900;
     text-transform: uppercase;
 }
-.content #h1{
+.content .h1{
     margin-left: 10vw;
 }
 .blockText{
     width: fit-content;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
 }
 .blockText h5{
     text-align: right;
@@ -58,7 +81,9 @@ body,html{
     margin-top: 10vh;
     padding-right: 30px;
     padding-top: 1vh;
-
+    display: flex;
+    align-items: end;
+    flex-direction: column;
 }
 .nextHead h5{
     text-transform: uppercase;
@@ -80,6 +105,8 @@ body,html{
     display: flex;
     gap: 5px;
     padding-right: 30px;
+    
+    
 }
 .hero-footer .circle{
     display: flex;
@@ -89,6 +116,7 @@ body,html{
     height: 25px;
     border-radius: 50%;
     background-color: #888;
+   
 }
 .second{
     padding-top: 17vh;
@@ -156,6 +184,10 @@ body,html{
     text-decoration: none;
     color: #fff;
 }
+.abouttext a:hover{
+    color: #111;
+    background-color: white;
+}
 .subscribe{
     color: #fff;
     padding: 20px 30px;
@@ -171,9 +203,8 @@ body,html{
     font-size: 14px;
     margin-top: 10px;
 }
-.subscribe h3{
-    color: #fff;
-}
+
+ 
 .footer{
     padding: 2.3vw 3.5vw;
     display: flex;
